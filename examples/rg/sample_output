@@ -1,0 +1,154 @@
+________     ___________      __________________                                     
+____  _/________  __/_(_)________(_)_⚡ ____/_/ /________ ______________ _____________
+ __  /__  __ \_  /_ _  /_  __ \_  /_/ /   __/ __ \  ՛__ `/_/ ___/_  __ `/  _ \_  ___/
+__/ / _  / / /  __/_  /_  / / /  / / /___ _/ / / // /_/ /_/ / ___  /_/ //  __/(__  ) 
+/___/ /_/ /_//_/   /_/ /_/ /_//_/  \____/ /_/ /_/ \__,_/ /_/   __\__, / \___//____/  
+                                                                /____/               
+
+Version 1.0
+
+Started on:  2015-07-29 17:18:07
+Current working directory is:  /home/andrea/work/InfiniCharges_working/examples/rg
+Pid is:  8814
+
+Performing  RG  fit.
+ESP *.cube files are expected to be in: ./cubes/
+ESP *.cube from CP2K, data are multiplied by:  -1.0
+RG weight:  0.1
+RG restraints will be automatically generated
+Atom type and occurrence (optionally restraint and its weight):
+C1  -->    24
+C2  -->    48
+C3  -->    24
+H2  -->    48
+H3  -->    48
+H4  -->    24
+N   -->    48
+Zn  -->    12
+
+Computing ESP data for gammas: 
+1.0
+1.2
+1.4
+Atom types and atomic number:
+C1  -->   6
+C2  -->   6
+C3  -->   6
+H2  -->   1
+H3  -->   1
+H4  -->   1
+N   -->   7
+Zn  -->  30
+./cubes/zif8_2.cube
+./cubes/zif8_1.cube
+Number of cubes is:  2
+========================================================================
+Working for gamma:  1.0
+Pure ESP charges:
+C1  =    0.34612957
+C2  =   -0.17128134
+C3  =   -0.25436052
+H2  =    0.14237651
+H3  =    0.06886326
+H4  =    0.06340638
+N   =   -0.28171845
+Zn  =    0.65668924
+ESP RRMS:  0.447515837483
+
+
+This is equivalent to restraining the charges, 
+with a weight depending on the self Coulomb interaction J, 
+to values: 
+[-0.52765207 -0.52765207 -0.52765207 -0.32598053 -0.32598053 -0.32598053
+ -0.58665069 -0.59579859]
+
+Final rounded charges:
+C1  =    0.2067
+C2  =   -0.1821
+C3  =   -0.0894
+H2  =    0.1410
+H3  =    0.0290
+H4  =    0.0229
+N   =   -0.1874
+Zn  =    0.5176
+RRMS:  0.463056267403
+========================================================================
+Working for gamma:  1.2
+Pure ESP charges:
+C1  =    0.24380116
+C2  =   -0.19040589
+C3  =   -0.05432371
+H2  =    0.15800759
+H3  =    0.02436355
+H4  =    0.01901695
+N   =   -0.21339880
+Zn  =    0.46874543
+ESP RRMS:  0.435791741737
+
+
+This is equivalent to restraining the charges, 
+with a weight depending on the self Coulomb interaction J, 
+to values: 
+[-0.52765207 -0.52765207 -0.52765207 -0.32598053 -0.32598053 -0.32598053
+ -0.58665069 -0.59579859]
+
+Final rounded charges:
+C1  =    0.1296
+C2  =   -0.1653
+C3  =   -0.0089
+H2  =    0.1392
+H3  =    0.0188
+H4  =    0.0111
+N   =   -0.1206
+Zn  =    0.2480
+RRMS:  0.466621758551
+========================================================================
+Working for gamma:  1.4
+Pure ESP charges:
+C1  =    0.11632883
+C2  =   -0.19043614
+C3  =    0.02994853
+H2  =    0.16168386
+H3  =    0.01011437
+H4  =    0.00520386
+N   =   -0.18481228
+Zn  =    0.51083829
+ESP RRMS:  0.429767362122
+
+
+This is equivalent to restraining the charges, 
+with a weight depending on the self Coulomb interaction J, 
+to values: 
+[-0.52765207 -0.52765207 -0.52765207 -0.32598053 -0.32598053 -0.32598053
+ -0.58665069 -0.59579859]
+
+Final rounded charges:
+C1  =    0.0538
+C2  =   -0.1136
+C3  =   -0.0077
+H2  =    0.1178
+H3  =    0.0281
+H4  =    0.0201
+N   =   -0.1160
+Zn  =    0.2024
+RRMS:  0.505447566911
+
+Ended on:  2015-07-29 17:18:08
+Run for seconds:  0.718167066574
+
+========================================================================
+If you found this program useful, please cite: 
+A. Gabrieli, M. Sant, P. Demontis, G. B. Suffritti
+J. Chem. Theory Comput., ASAP (2015)          
+http://dx.doi.org/10.1021/acs.jctc.5b00503
+                                               
+Together with the original REPEAT work:        
+C. Campana, B. Mussard, T. K. Woo
+J. Chem. Theory Comput. 5 (2009) 2866-2878
+http://dx.doi.org/10.1021/ct9003405
+
+The logo has been generated with figlet: http://www.figlet.org/
+
+========================================================================
+InfiniCharges comes with ABSOLUTELY NO WARRANTY. 
+

@@ -1,0 +1,131 @@
+________     ___________      __________________                                     
+____  _/________  __/_(_)________(_)_⚡ ____/_/ /________ ______________ _____________
+ __  /__  __ \_  /_ _  /_  __ \_  /_/ /   __/ __ \  ՛__ `/_/ ___/_  __ `/  _ \_  ___/
+__/ / _  / / /  __/_  /_  / / /  / / /___ _/ / / // /_/ /_/ / ___  /_/ //  __/(__  ) 
+/___/ /_/ /_//_/   /_/ /_/ /_//_/  \____/ /_/ /_/ \__,_/ /_/   __\__, / \___//____/  
+                                                                /____/               
+
+Version 1.0
+
+Started on:  2015-07-29 17:19:08
+Current working directory is:  /home/andrea/work/InfiniCharges_working/examples/resp_with_different_weights
+Pid is:  8867
+
+Performing  RESP  fit.
+ESP *.cube files are expected to be in: ./cubes/
+ESP *.cube from CP2K, data are multiplied by:  -1.0
+Atom type and occurrence (optionally restraint and its weight):
+C1  -->    24  (restrained to:    0.29960000  with weight:    7.00000000)
+C2  -->    48  (restrained to:   -0.06560000  with weight:   10.06560000)
+C3  -->    24  (restrained to:   -0.05330000  with weight:   10.05330000)
+H2  -->    48
+H3  -->    48  (restrained to:    0.07100000  with weight:   10.07100000)
+H4  -->    24  (restrained to:    0.06960000  with weight:   10.00000000)
+N   -->    48
+Zn  -->    12  (restrained to:    1.67860000  with weight:    1.00000000)
+
+Computing ESP data for gammas: 
+1.0
+1.2
+1.4
+Atom types and atomic number:
+C1  -->   6
+C2  -->   6
+C3  -->   6
+H2  -->   1
+H3  -->   1
+H4  -->   1
+N   -->   7
+Zn  -->  30
+./cubes/zif8_2.cube
+./cubes/zif8_1.cube
+Number of cubes is:  2
+========================================================================
+Working for gamma:  1.0
+Pure ESP charges:
+C1  =    0.34612957
+C2  =   -0.17128134
+C3  =   -0.25436052
+H2  =    0.14237651
+H3  =    0.06886326
+H4  =    0.06340638
+N   =   -0.28171845
+Zn  =    0.65668924
+ESP RRMS:  0.447515837483
+
+Final rounded charges:
+C1  =    0.2995
+C2  =   -0.0656
+C3  =   -0.0543
+H2  =    0.1322
+H3  =    0.0698
+H4  =    0.0685
+N   =   -0.7012
+Zn  =    1.6318
+RRMS:  1.12177615727
+========================================================================
+Working for gamma:  1.2
+Pure ESP charges:
+C1  =    0.24380116
+C2  =   -0.19040589
+C3  =   -0.05432371
+H2  =    0.15800759
+H3  =    0.02436355
+H4  =    0.01901695
+N   =   -0.21339880
+Zn  =    0.46874543
+ESP RRMS:  0.435791741737
+
+Final rounded charges:
+C1  =    0.2992
+C2  =   -0.0657
+C3  =   -0.0547
+H2  =    0.1437
+H3  =    0.0695
+H4  =    0.0682
+N   =   -0.7170
+Zn  =    1.6526
+RRMS:  1.08188582164
+========================================================================
+Working for gamma:  1.4
+Pure ESP charges:
+C1  =    0.11632883
+C2  =   -0.19043614
+C3  =    0.02994853
+H2  =    0.16168386
+H3  =    0.01011437
+H4  =    0.00520386
+N   =   -0.18481228
+Zn  =    0.51083829
+ESP RRMS:  0.429767362122
+
+Final rounded charges:
+C1  =    0.2992
+C2  =   -0.0657
+C3  =   -0.0544
+H2  =    0.1528
+H3  =    0.0698
+H4  =    0.0685
+N   =   -0.7261
+Zn  =    1.6502
+RRMS:  1.01737757206
+
+Ended on:  2015-07-29 17:19:09
+Run for seconds:  0.714267015457
+
+========================================================================
+If you found this program useful, please cite: 
+A. Gabrieli, M. Sant, P. Demontis, G. B. Suffritti
+J. Chem. Theory Comput., ASAP (2015)          
+http://dx.doi.org/10.1021/acs.jctc.5b00503
+                                               
+Together with the original REPEAT work:        
+C. Campana, B. Mussard, T. K. Woo
+J. Chem. Theory Comput. 5 (2009) 2866-2878
+http://dx.doi.org/10.1021/ct9003405
+
+The logo has been generated with figlet: http://www.figlet.org/
+
+========================================================================
+InfiniCharges comes with ABSOLUTELY NO WARRANTY. 
+
