@@ -1,6 +1,14 @@
-# InfiniCharges
+```
+________     ___________      __________________                                     
+____  _/________  __/_(_)________(_)_⚡ ____/_/ /________ ______________ _____________
+ __  /__  __ \_  /_ _  /_  __ \_  /_/ /   __/ __ \  ՛__ `/_/ ___/_  __ `/  _ \_  ___/
+__/ / _  / / /  __/_  /_  / / /  / / /___ _/ / / // /_/ /_/ / ___  /_/ //  __/(__  ) 
+/___/ /_/ /_//_/   /_/ /_/ /_//_/  \____/ /_/ /_/ \__,_/ /_/   __\__, / \___//____/  
+                                                                /____/               
+
 A program to generate partial charges for periodic systems.
-Copyright (C) 2015  Andrea Gabrieli and Marco Sant                        
+Copyright (C) 2015  Andrea Gabrieli and Marco Sant
+```
 ################################################################################
  
     This software is distributed under the GNU General Public License.
