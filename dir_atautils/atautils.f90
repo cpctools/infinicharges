@@ -67,7 +67,8 @@ module atautils
     ! Read and store all data from cube file.
     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     subroutine init(cube_name_in)
-        integer iunit_cube_in
+        integer iunit_cube_in, i
+        real(kind=8), dimension(3) :: cubev
         character(len=80) cube_name_in
         !f2py intent in cube_name_in
         logical op
@@ -86,13 +87,27 @@ module atautils
         call read_cube(cube,iunit_cube_in)
         close(iunit_cube_in)
         
+        !shift the atoms to be centered about L/2, L/2, L/2, between 0 and L 
+        do i = 1, cube%Natom
+            cube%coords(:,i) = cube%coords(:,i) - cube%origin
+        end do
+
         !store coordinates in double precision
         allocate(cucoords(size(cube%coords,1),size(cube%coords,2)),stat=ierr)
         if (ierr /= 0) then
           write(ou,*), "Could not allocate cucoords."
           stop
         end if
-        cucoords= cube%coords
+        cucoords = cube%coords
+        
+        ! fold atoms to fall between 0 and L. 
+        do i = 1,3
+          cubev(i) = (cube%h(i,i))
+        enddo
+        do i = 1, cube%Natom
+          cucoords(:,i) = cucoords(:,i) - cubev * anint(cucoords(:,i)/cubev-0.5d0)
+        end do
+
 
         write(ou,*) "Done."
 
@@ -149,11 +164,6 @@ module atautils
           cubev(i) =(cube%h(i,i))
         enddo
         
-        ! fold atoms to fall between 0 and L
-        do i = 1, cube%Natom
-          cucoords(:,i) = cucoords(:,i) - cubev * anint(cucoords(:,i)/cubev-0.5d0)
-        end do
-
         ! sort the atoms based on their atomic number
         ! we expect small z atoms to be on the surface of the system
         ! thus may speedup the filtering procedure if scanned first
